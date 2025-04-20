@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PandaRide Car Rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/panda-theme.css">
+    <link rel="stylesheet" href="css/panda-decorations.css">
+    <link rel="icon" href="https://images.unsplash.com/photo-1566487097168-e91a4f38bee2?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTZ8fGN1dGUlMjBwYW5kYXxlbnwwfHx8fDE3NDUwMDE4MDB8MA&w=32&h=32&fit=crop" type="image/jpeg">
+</head>
+<body>
+    <!-- Floating Panda Elements -->
+    <div class="panda-float panda-float-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#2A2D34"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="9" r="2" fill="white"/><circle cx="16" cy="9" r="2" fill="white"/><path d="M9 16a3 3 0 0 0 6 0" stroke="white" fill="none"/></svg>
+    </div>
+    <div class="panda-float panda-float-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#78C271"><path d="M12 2v20M7 4v16M17 4v16" stroke="#5a9e54" stroke-width="2"/></svg>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-panda">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="panda-logo">🐼</span> <span class="fw-bold">Panda</span><span class="text-white">Ride</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cars.html">Our Fleet</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart <span id="cart-count" class="badge bg-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="login-menu-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item d-none" id="user-menu-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-user-circle"></i> <span id="username-display">User</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">About DriveEasy</h1>
+                    <p class="lead mb-4">Your premier destination for hassle-free car rentals. Experience the freedom of the open road with our premium fleet and exceptional service.</p>
+                    <p class="mb-4">Founded in 2020, DriveEasy has quickly become the go-to car rental service for travelers and locals alike. Our mission is to provide affordable, reliable, and convenient transportation solutions for all your needs.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/product-6.jpg" alt="Car Rental" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <div class="bamboo-divider"></div>
+    <section class="py-5 panda-section-light paw-prints">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3 panda-title">Our Panda Story</h2>
+                    <span class="badge badge-panda bg-white text-dark mb-3 px-3 py-2 rounded-pill"><i class="fas fa-leaf me-2"></i>Eco-Friendly Since 2015</span>
+                    <p class="lead text-muted">From a small fleet to a nationwide service</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <p>DriveEasy was born out of a simple idea: to make car rentals easy, affordable, and enjoyable. Our founder, Michael Thompson, experienced firsthand the frustrations of traditional car rental services - long lines, hidden fees, and complicated contracts.</p>
+                    <p>Determined to create a better alternative, Michael launched DriveEasy with just 5 cars and a commitment to transparency, quality, and customer satisfaction. Today, we operate in over 20 cities with a fleet of more than 500 vehicles.</p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <img src="images/mouni_panda.jpeg" alt="Mounika Devi" class="rounded-circle img-thumbnail" style="width: 150px; height: 150px; object-fit: cover;">
+                                <h4 class="mt-3">Mounika Devi</h4>
+                                <p class="text-muted">Founder & CEO</p>
+                            </div>
+                            <p class="fst-italic">"Our goal is simple - to provide the best car rental experience possible. We believe in treating our customers like family and their journeys as our own."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <div class="bamboo-divider"></div>
+    <section class="py-5 paw-prints">
+        <div class="container position-relative">
+            <div class="position-absolute top-0 end-0 opacity-10">
+                <img src="https://source.unsplash.com/3tYZjGSBwbk" alt="Panda background" width="300">
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3 panda-title">Our Panda Values</h2>
+                    <p class="lead text-muted">The principles that drive us forward</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-handshake fa-3x text-primary"></i>
+                            </div>
+                            <h4>Integrity</h4>
+                            <p>We believe in transparent pricing, honest communication, and doing what's right for our customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-star fa-3x text-primary"></i>
+                            </div>
+                            <h4>Excellence</h4>
+                            <p>We strive for excellence in every aspect of our service, from vehicle maintenance to customer support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-leaf fa-3x text-primary"></i>
+                            </div>
+                            <h4>Sustainability</h4>
+                            <p>We're committed to reducing our environmental impact through fuel-efficient vehicles and eco-friendly practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <div class="bamboo-divider"></div>
+    <section class="py-5 panda-section-light paw-prints">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3 panda-title">Our Panda Leadership Team</h2>
+                    <p class="lead text-muted">Meet the bamboo-loving experts behind our success <span class="panda-emoji">🐼</span></p>
+                    <p class="lead text-muted">Meet the people behind DriveEasy</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="images/VjjuGF.jpeg" alt="Indu" class="rounded-circle img-thumbnail mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                            <h5>Indu</h5>
+                            <p class="text-muted">Chief Technology Officer</p>
+                            <div class="social-icons mt-3">
+                                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-muted"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="images/vijay.jpeg" alt="Vijju" class="rounded-circle img-thumbnail mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                            <h5>Vijju</h5>
+                            <p class="text-muted">Chief Technology Officer</p>
+                            <div class="social-icons mt-3">
+                                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-muted"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="images/vijjuGF_.jpeg" alt="Chinni" class="rounded-circle img-thumbnail mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                            <h5>Chinni</h5>
+                            <p class="text-muted">Customer Experience Director</p>
+                            <div class="social-icons mt-3">
+                                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-muted"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="images/mouni_panda.jpeg" alt="Mounika Devi" class="rounded-circle img-thumbnail mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                            <h5>Mounika Devi</h5>
+                            <p class="text-muted">Fleet Manager</p>
+                            <div class="social-icons mt-3">
+                                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-muted"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="bamboo-divider"></div>
+    <footer class="footer-panda py-5">
+        <div class="container py-3">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-4">
+                        <a href="index.html" class="text-decoration-none">
+                            <h4 class="text-white"><i class="fas fa-car-side me-2"></i>DriveEasy</h4>
+                        </a>
+                    </div>
+                    <p class="text-muted">Your premier destination for hassle-free car rentals. Experience the freedom of the open road with our premium fleet and exceptional service.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html" class="text-muted">Home</a></li>
+                        <li class="mb-2"><a href="cars.html" class="text-muted">Our Fleet</a></li>
+
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQs</a></li>
+                        <li><a href="contact.html" class="text-muted">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, New York, NY 10001
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i> (123) 456-7890
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i> info@driveeasy.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Business Hours</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2">
+                            <span class="d-block">Monday - Friday</span>
+                            <span class="text-muted">8:00 AM - 8:00 PM</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="d-block">Saturday</span>
+                            <span class="text-muted">9:00 AM - 6:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="d-block">Sunday</span>
+                            <span class="text-muted">10:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 DriveEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

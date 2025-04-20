@@ -1,0 +1,292 @@
+/* Panda Decorations - Additional panda-themed elements */
+
+/* Floating panda elements */
+.panda-float {
+    position: absolute;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.panda-float-1 {
+    top: 10%;
+    left: 5%;
+    animation: float-rotate 20s infinite linear;
+}
+
+.panda-float-2 {
+    bottom: 15%;
+    right: 8%;
+    animation: float-rotate 25s infinite linear reverse;
+}
+
+.panda-float-3 {
+    top: 40%;
+    right: 15%;
+    animation: float-rotate 30s infinite linear;
+}
+
+.panda-float-4 {
+    bottom: 30%;
+    left: 10%;
+    animation: float-rotate 22s infinite linear reverse;
+}
+
+@keyframes float-rotate {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-15px) rotate(90deg); }
+    50% { transform: translateY(0) rotate(180deg); }
+    75% { transform: translateY(15px) rotate(270deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+}
+
+/* Bamboo dividers */
+.bamboo-divider {
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 100 40"><g fill="%2378C271" opacity="0.3"><rect x="10" y="0" width="5" height="40" rx="2"></rect><rect x="30" y="5" width="5" height="35" rx="2"></rect><rect x="50" y="0" width="5" height="40" rx="2"></rect><rect x="70" y="8" width="5" height="32" rx="2"></rect><rect x="90" y="3" width="5" height="37" rx="2"></rect></g></svg>');
+    background-repeat: repeat-x;
+    margin: 2rem 0;
+}
+
+/* Panda paw prints */
+.paw-prints {
+    position: relative;
+}
+
+.paw-prints::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20"><path d="M5,10 C7,10 9,8 9,6 C9,4 7,2 5,2 C3,2 1,4 1,6 C1,8 3,10 5,10 Z M15,8 C17,8 19,6 19,4 C19,2 17,0 15,0 C13,0 11,2 11,4 C11,6 13,8 15,8 Z M25,10 C27,10 29,8 29,6 C29,4 27,2 25,2 C23,2 21,4 21,6 C21,8 23,10 25,10 Z M10,20 C12,20 14,18 14,16 C14,14 12,12 10,12 C8,12 6,14 6,16 C6,18 8,20 10,20 Z M20,20 C22,20 24,18 24,16 C24,14 22,12 20,12 C18,12 16,14 16,16 C16,18 18,20 20,20 Z" fill="%232A2D34" opacity="0.1"></path></svg>');
+    background-repeat: repeat-x;
+}
+
+/* Panda-themed form elements */
+.form-control:focus {
+    border-color: var(--panda-accent);
+    box-shadow: 0 0 0 0.25rem rgba(120, 194, 113, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--panda-accent);
+    box-shadow: 0 0 0 0.25rem rgba(120, 194, 113, 0.25);
+}
+
+/* Panda-themed badges */
+.badge-panda {
+    background-color: var(--panda-accent);
+    color: white;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.badge-panda::after {
+    content: '🐾';
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7em;
+}
+
+/* Panda-themed alerts */
+.alert-panda {
+    background-color: var(--panda-light);
+    border-left: 4px solid var(--panda-accent);
+    position: relative;
+    overflow: hidden;
+}
+
+.alert-panda::before {
+    content: '🐼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    opacity: 0.2;
+}
+
+/* Bamboo loading spinner */
+.bamboo-spinner {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.bamboo-spinner::before,
+.bamboo-spinner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: var(--panda-accent);
+    border-bottom-color: var(--panda-secondary);
+    animation: bamboo-spin 1.5s linear infinite;
+}
+
+.bamboo-spinner::after {
+    border-top-color: var(--panda-secondary);
+    border-bottom-color: var(--panda-accent);
+    animation-duration: 1s;
+}
+
+@keyframes bamboo-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Panda-themed tooltips */
+[data-panda-tooltip] {
+    position: relative;
+}
+
+[data-panda-tooltip]::after {
+    content: attr(data-panda-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--panda-soft-black);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+[data-panda-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+    bottom: calc(100% + 10px);
+}
+
+/* Bamboo progress bar */
+.progress-panda .progress-bar {
+    background: linear-gradient(90deg, var(--panda-accent), var(--panda-secondary));
+    position: relative;
+    overflow: hidden;
+}
+
+/* Panda process icons */
+.panda-process-icon {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, var(--panda-accent), var(--panda-bamboo-dark));
+    box-shadow: 0 5px 15px rgba(120, 194, 113, 0.3);
+}
+
+/* Panda loading animation */
+.panda-loading {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.panda-loading img {
+    animation: panda-bounce 2s infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid white;
+}
+
+@keyframes panda-bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+}
+
+/* Car card styling */
+.car-card {
+    transition: all 0.3s ease;
+    border: none;
+    overflow: hidden;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.car-card .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.car-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.car-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.car-features span {
+    font-size: 0.8rem;
+    background-color: var(--panda-light);
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.car-price {
+    color: var(--panda-accent);
+    font-size: 1.1rem;
+}
+
+.car-availability.available {
+    color: var(--panda-accent);
+    font-size: 0.8rem;
+}
+
+.car-availability.unavailable {
+    color: #dc3545;
+    font-size: 0.8rem;
+}
+
+.panda-process-icon img {
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--panda-accent);
+    transition: transform 0.3s ease;
+}
+
+.panda-process-icon:hover img {
+    transform: scale(1.05);
+}
+
+.progress-panda .progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+    animation: progress-bamboo 1s linear infinite;
+}
+
+@keyframes progress-bamboo {
+    0% { background-position: 0 0; }
+    100% { background-position: 1rem 0; }
+}

@@ -1,0 +1,359 @@
+/* 
+   Car Rental System - Main Stylesheet
+   Created: April 2025
+*/
+
+/* General Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/panda-panda-car-3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Styles */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+/* Car Cards */
+.car-card {
+    margin-bottom: 1.5rem;
+}
+
+.car-card .car-features {
+    margin: 1rem 0;
+}
+
+.car-card .car-features span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.car-card .car-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.car-card .car-availability {
+    font-weight: 500;
+}
+
+.car-card .available {
+    color: var(--success-color);
+}
+
+.car-card .unavailable {
+    color: var(--danger-color);
+}
+
+/* Testimonials */
+.testimonial-card {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card .card-body {
+    padding: 1.5rem;
+}
+
+.testimonial-card .card-text {
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--light-color);
+    text-decoration: underline;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Forms */
+.form-control {
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: #86b7fe;
+}
+
+/* Checkout Steps */
+.checkout-steps {
+    margin: 2rem 0;
+}
+
+.checkout-steps .step {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.checkout-steps .step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.checkout-steps .step.active .step-number {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.checkout-steps .step-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.checkout-steps .step.active .step-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.checkout-steps .step-connector {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #e9ecef;
+    margin-top: 20px;
+}
+
+.checkout-steps .step-connector.active {
+    background-color: var(--primary-color);
+}
+
+/* Booking Item */
+.booking-item {
+    padding: 1rem 0;
+}
+
+.booking-item:not(:last-child) {
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Car Detail Modal */
+.car-detail-image {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.car-detail-features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.car-detail-features span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .search-box {
+        margin-top: 2rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 1.2rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Utility Classes */
+.border-left-primary {
+    border-left: 4px solid var(--primary-color);
+}
+
+.border-left-success {
+    border-left: 4px solid var(--success-color);
+}
+
+.border-left-info {
+    border-left: 4px solid var(--info-color);
+}
+
+.border-left-warning {
+    border-left: 4px solid var(--warning-color);
+}
+
+.border-left-danger {
+    border-left: 4px solid var(--danger-color);
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - PandaRide Car Rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/panda-theme.css">
+    <link rel="stylesheet" href="css/panda-decorations.css">
+    <link rel="icon" href="https://images.unsplash.com/photo-1566487097168-e91a4f38bee2?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTZ8fGN1dGUlMjBwYW5kYXxlbnwwfHx8fDE3NDUwMDE4MDB8MA&w=32&h=32&fit=crop" type="image/jpeg">
+</head>
+<body>
+    <!-- Floating Panda Elements -->
+    <div class="panda-float panda-float-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#2A2D34"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="9" r="2" fill="white"/><circle cx="16" cy="9" r="2" fill="white"/><path d="M9 16a3 3 0 0 0 6 0" stroke="white" fill="none"/></svg>
+    </div>
+    <div class="panda-float panda-float-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#78C271"><path d="M12 2v20M7 4v16M17 4v16" stroke="#5a9e54" stroke-width="2"/></svg>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-panda">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="panda-logo">🐼</span> <span class="fw-bold">Panda</span><span class="text-white">Ride</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cars.html">Our Fleet</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart <span id="cart-count" class="badge bg-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="login-menu-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <div class="bamboo-divider"></div>
+    <section class="py-5 panda-section-light paw-prints">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow panda-card">
+                        <div class="card-header bg-primary text-white py-3 position-relative">
+                            <h3 class="card-title mb-0 text-center">Join the Panda Family</h3>
+                            <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-warning text-dark p-2 shadow-sm">
+                                <i class="fas fa-paw me-1"></i> New Member
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div id="register-alert" class="alert alert-danger d-none" role="alert">
+                                Registration failed. Please check your information and try again.
+                            </div>
+                            <form id="register-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="first-name" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="first-name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="last-name" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="last-name" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="register-email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="register-email" required>
+                                    <div class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone-number" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone-number" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="register-password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="register-password" required>
+                                        <div class="form-text">Password must be at least 8 characters long and include a number and a special character.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="confirm-password" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <textarea class="form-control" id="address" rows="3" required></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="city" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="city" required>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="state" class="form-label">State</label>
+                                        <input type="text" class="form-control" id="state" required>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="zip-code" class="form-label">Zip Code</label>
+                                        <input type="text" class="form-control" id="zip-code" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="driver-license" class="form-label">Driver's License Number</label>
+                                    <input type="text" class="form-control" id="driver-license" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms-agree" required>
+                                    <label class="form-check-label" for="terms-agree">I agree to the <a href="terms.html">Terms and Conditions</a> and <a href="privacy.html">Privacy Policy</a></label>
+                                </div>
+                                <button type="submit" class="btn btn-panda w-100 py-2"><i class="fas fa-user-plus me-2"></i>Register</button>
+                            </form>
+                            <div class="mt-3 text-center">
+                                <p>Already have an account? <a href="login.html" class="text-accent" style="color: var(--panda-accent);">Login here</a></p>
+                                <div class="alert alert-panda p-2 mt-3">
+                                    <i class="fas fa-star me-2"></i> <strong>Panda Tip:</strong> Members get special bamboo discounts! <span class="panda-emoji d-inline-block">🐼</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="bamboo-divider"></div>
+    <footer class="footer-panda py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>CarRental</h5>
+                    <p>Your trusted partner for car rentals. We provide quality cars at affordable prices.</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="cars.html" class="text-white">Cars</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Main St, New York, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@carrental.com</p>
+                    </address>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 CarRental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

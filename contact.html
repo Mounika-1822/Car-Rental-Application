@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PandaRide Car Rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/panda-theme.css">
+    <link rel="stylesheet" href="css/panda-decorations.css">
+    <link rel="icon" href="https://images.unsplash.com/photo-1566487097168-e91a4f38bee2?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTZ8fGN1dGUlMjBwYW5kYXxlbnwwfHx8fDE3NDUwMDE4MDB8MA&w=32&h=32&fit=crop" type="image/jpeg">
+</head>
+<body>
+    <!-- Floating Panda Elements -->
+    <div class="panda-float panda-float-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#2A2D34"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="9" r="2" fill="white"/><circle cx="16" cy="9" r="2" fill="white"/><path d="M9 16a3 3 0 0 0 6 0" stroke="white" fill="none"/></svg>
+    </div>
+    <div class="panda-float panda-float-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#78C271"><path d="M12 2v20M7 4v16M17 4v16" stroke="#5a9e54" stroke-width="2"/></svg>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-panda">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="panda-logo">🐼</span> <span class="fw-bold">Panda</span><span class="text-white">Ride</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cars.html">Our Fleet</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart <span id="cart-count" class="badge bg-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="login-menu-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item d-none" id="user-menu-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-user"></i> <span id="username-display">User</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+                    <p class="lead mb-0">Have questions or need assistance? We're here to help!</p>
+                    <p class="lead">Reach out to our friendly team using any of the methods below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <div class="bamboo-divider"></div>
+    <section class="py-5 panda-section-light paw-prints">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 panda-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-map-marker-alt fa-3x text-accent mb-3" style="color: var(--panda-accent);"></i>
+                                <h4>Visit Our Bamboo Forest</h4>
+                            </div>
+                            <h4>Our Location</h4>
+                            <p class="mb-0">Road No. 1 KPHB</p>
+                            <p class="mb-0">Hyderabad, TS 50001</p>
+                            <p>India</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary mt-3">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 panda-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-phone-alt fa-3x mb-3" style="color: var(--panda-accent);"></i>
+                                <h4>Call Our Pandas</h4>
+                            </div>
+                            <h4>Phone Numbers</h4>
+                            <p class="mb-0">Customer Support: (123) 456-7890</p>
+                            <p class="mb-0">Reservations: (123) 456-7891</p>
+                            <p>Roadside Assistance: (123) 456-7892</p>
+                            <a href="tel:+11234567890" class="btn btn-outline-primary mt-3">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 panda-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-envelope fa-3x mb-3" style="color: var(--panda-accent);"></i>
+                                <h4>Email Our Pandas</h4>
+                            </div>
+                            <h4>Email Addresses</h4>
+                            <p class="mb-0">General Inquiries: info@pandaride.com</p>
+                            <p class="mb-0">Customer Support: support@pandaride.com</p>
+                            <p>Reservations: bookings@pandaride.com</p>
+                            <a href="mailto:info@pandaride.com" class="btn btn-outline-primary mt-3">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <div class="bamboo-divider"></div>
+    <section class="py-5 paw-prints">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3 panda-title">Send Us a Message</h2>
+                    <span class="badge badge-panda bg-white text-dark mb-3 px-3 py-2 rounded-pill"><i class="fas fa-comments me-2"></i>We respond within 24 hours</span>
+                    <p class="lead text-muted">We'll get back to you as soon as possible</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="" selected disabled>Select a subject</option>
+                                            <option value="reservation">Reservation Inquiry</option>
+                                            <option value="support">Customer Support</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="partnership">Business Partnership</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Your Message</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacy-policy" required>
+                                            <label class="form-check-label" for="privacy-policy">
+                                                I agree to the <a href="#">Privacy Policy</a> and consent to having my data processed.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-panda"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours Section -->
+    <div class="bamboo-divider"></div>
+    <section class="py-5 panda-section-light paw-prints">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3 panda-title">Panda Business Hours</h2>
+                    <p class="lead text-muted">When our pandas are ready to serve you <span class="panda-emoji">🐼</span></p>
+                    <p class="lead text-muted">When you can reach us</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="table-responsive">
+                                <table class="table table-borderless mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-bold">Monday - Friday</td>
+                                            <td class="text-end">8:00 AM - 8:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Saturday</td>
+                                            <td class="text-end">9:00 AM - 6:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Sunday</td>
+                                            <td class="text-end">10:00 AM - 4:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Holiday Hours</td>
+                                            <td class="text-end">May vary. Please call ahead.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="alert alert-info mt-4 mb-0">
+                                <i class="fas fa-info-circle me-2"></i> Our 24/7 roadside assistance is available for emergencies at (123) 456-7892.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Find Us</h2>
+                    <p class="lead text-muted">Visit our main office</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="ratio ratio-21x9 shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256349542!2d-73.98784492426285!3d40.75790613646878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1682075584261!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="bamboo-divider"></div>
+    <footer class="footer-panda py-5">
+        <div class="container py-3">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-4">
+                        <a href="index.html" class="text-decoration-none">
+                            <h4 class="text-white"><i class="fas fa-car-side me-2"></i>DriveEasy</h4>
+                        </a>
+                    </div>
+                    <p class="text-muted">Your premier destination for hassle-free car rentals. Experience the freedom of the open road with our premium fleet and exceptional service.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html" class="text-muted">Home</a></li>
+                        <li class="mb-2"><a href="cars.html" class="text-muted">Our Fleet</a></li>
+
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted">FAQs</a></li>
+                        <li><a href="contact.html" class="text-muted">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, New York, NY 10001
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i> (123) 456-7890
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i> info@driveeasy.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Business Hours</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2">
+                            <span class="d-block">Monday - Friday</span>
+                            <span class="text-muted">8:00 AM - 8:00 PM</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="d-block">Saturday</span>
+                            <span class="text-muted">9:00 AM - 6:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="d-block">Sunday</span>
+                            <span class="text-muted">10:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 DriveEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        // Simple form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real application, you would send this data to a server
+            // For demo purposes, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been sent. We'll get back to you soon.`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
